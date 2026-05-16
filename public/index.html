@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Questionnaire App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>🎮 Roblox Studio Questionnaire</h1>
+            <p class="subtitle">Help us understand your Roblox development experience</p>
+            
+            <form id="questionnaireForm">
+                <div id="questionsContainer"></div>
+                
+                <div class="button-group">
+                    <button type="submit" class="btn btn-submit">Submit Questionnaire</button>
+                    <button type="reset" class="btn btn-reset">Clear</button>
+                </div>
+            </form>
+            
+            <div id="successMessage" class="success-message" style="display: none;">
+                ✅ Questionnaire submitted successfully!
+            </div>
+            
+            <div id="errorMessage" class="error-message" style="display: none;">
+                ❌ Error submitting questionnaire. Please try again.
+            </div>
+            
+            <div class="stats">
+                <p>Total Responses: <span id="responseCount">0</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
